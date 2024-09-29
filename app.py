@@ -2,7 +2,7 @@ import streamlit as st
 import gem as travel_planner  # Replace with actual module name
 
 def main():
-    st.title("Travel Itinerary Generator")
+    st.title("Travel Itinerary")
 
     departure_location = st.text_input("Departure Location:")
     location = st.text_input("Destination:")
