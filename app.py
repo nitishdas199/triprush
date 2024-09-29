@@ -126,9 +126,9 @@ def add_navbar():
                 <a href="#"><img src="https://github.com/nitishdas199/triprush/blob/b392daaeeb9796085ad944fc9b66948aaebad815/triprush.png?raw=true" alt="Travel Rush Logo"></a> <!-- Replace with your logo URL -->
             </div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://triprush.streamlit.app/">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#"contact">Contact</a></li>
             </ul>
         </nav>
         """,
