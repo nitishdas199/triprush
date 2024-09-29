@@ -1,13 +1,94 @@
+nav {
+    background-color: #461ed4d2;
+    overflow: hidden;
+    display: flex; /* Flexbox to arrange items */
+    justify-content: space-between; /* Space between logo and nav items */
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Logo styling */
+nav .logo img {
+    height: 80px; /* Adjust based on your logo size */
+    width: auto;
+}
+
+/* Navbar menu items */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Align nav items in a row */
+}
+
+nav ul li {
+    margin-right: 20px; /* Space between nav items */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Responsive: Stack nav items vertically for small screens */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+}
+
+
+
+/* Body background with an image */
+body {
+    background-image: url('wall.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Blurred form container */
 .container {
-    max-width: 800px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 20px;
+    background: rgba(255, 255, 255, 0.045); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Blur effect */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Optional shadow for added depth */
 }
-
+h4 {
+    color: #0e0233; /* White color to contrast with the background */
+    margin-bottom: 20px;
+}
+/* Centered title */
 h1 {
     text-align: center;
+    color: #fff; /* White color to contrast with the background */
 }
 
+/* Form styling */
 form {
     margin-top: 20px;
 }
@@ -15,6 +96,7 @@ form {
 label {
     display: block;
     margin-bottom: 5px;
+    color: #fff; /* White text for better readability */
 }
 
 input, select {
@@ -22,8 +104,10 @@ input, select {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 
+/* Button styling */
 button {
     background-color: #007bff;
     color: white;
@@ -31,9 +115,16 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Result section */
 #result {
     margin-top: 20px;
     font-weight: bold;
+    color: #fff; /* White color to stand out */
 }
