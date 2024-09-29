@@ -1,3 +1,1 @@
-hello all 
-this is a itineary planner app which will suggest you 
-for all your travel needs on the basis of your inputs
+Effortlessly plan your perfect trip with our personalized travel itinerary planner.
